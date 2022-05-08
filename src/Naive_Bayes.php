@@ -206,7 +206,7 @@ class Text_Classification
 				}
 				else
 				{
-					$test_class[$class]['computed'][] = 0;
+					$test_class[$class]['computed'][] = 1;
 				}
 			}
 
@@ -215,12 +215,9 @@ class Text_Classification
 
 		foreach ($test_class as $key => $value)
 		{
-			if (isset($value['computed']))
+			foreach ($value['computed'] as $val)
 			{
-				foreach ($value['computed'] as $val)
-				{
-					$test_class[$key]['result'] *= $val;
-				}
+				$test_class[$key]['result'] *= $val;
 			}
 		}
 
@@ -228,7 +225,7 @@ class Text_Classification
 
 		foreach ($this->class as $class)
 		{
-			$result[] = $test_class[$class]['result'];
+			$result[$class] = $test_class[$class]['result'];
 		}
 
 		$max = max($result);
