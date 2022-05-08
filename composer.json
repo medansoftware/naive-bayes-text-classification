@@ -1,0 +1,20 @@
+{
+	"name": "medansoftware/naive-bayes-text-classification",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Agung Dirgantara",
+			"email": "agungmasda29@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6.0",
+		"sastrawi/sastrawi": "^1.2"
+	},
+	"autoload": {
+		 "classmap": [
+		 	"src"
+		 ]
+	}
+}
