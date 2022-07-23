@@ -7,7 +7,7 @@
 ## Through [Composer](https://getcomposer.org)
 
 ```bash
-composer require medansoftware/c45-algorithm-php
+composer require medansoftware/naive-bayes-text-classification
 ```
 
 ## Standalone File
